@@ -1,0 +1,25 @@
+:root{
+	/* 
+		### reset
+	*/
+	/*------------------------------------------------ Link*/
+	--color-link:;
+	--text-decoration:;
+	/*------------------------------------------------ Selection*/
+	--selection-bg:;
+	--selection-color:;
+	/*------------------------------------------------ Colors*/
+	--color-default: rgba(0, 70, 145, 1);
+	/*------------------------------------------------ Fonts*/
+	--bold: codar-bold;
+	--light: codar-light;
+	--heavy: codar-heavy;
+	--medium: codar-medium;
+	--regular: codar-regular;
+	--thin: codar-thin;
+	/* 
+		### Galeria
+	*/
+	/*------------------------------------------------ Dots*/
+	--gal-dots-bg:;
+}

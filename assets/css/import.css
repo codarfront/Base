@@ -1,0 +1,12 @@
+/*Codar*/
+@import "reset/codar.min.css";
+/*Font-icon*/
+@import "fonts/font-awesome.min.css";
+/*Galeria*/
+@import "galeria/owl.carousel.min.css";
+@import "galeria/owl.theme.default.min.css";
+@import "galeria/anime-galeria.css";
+/*Classes de reuso*/
+@import "reuso/reuso.css";
+/*@Media*/
+@import "mediaquery/media.response.css";
