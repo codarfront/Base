@@ -53,6 +53,29 @@ function elObjAll (elObjAll) {return document.querySelectorAll(elObjAll);}
 		}
 	}
 }());
+// Background Parallax
+// Função criada para determinar efeito parallax com evento scroll
+(function bgParallax(){
+	var blocoBg, distTopBody, distancia, searchDataFrame, dataFrame;
+
+	searchDataFrame = document.querySelectorAll("div, section, article, main, header, footer, aside, span, nav");
+
+	for(var i = 0; i < searchDataFrame.length; i++){
+		dataFrame = searchDataFrame[i].getAttribute("data-frame");
+
+		if (dataFrame) {	
+			window.onscroll = function(){
+				for(var i = 0; i < searchDataFrame.length; i++){						
+					dataFrame = searchDataFrame[i].getAttribute("data-frame");
+					distTopBody = parseInt(scrollTopPosition(document.body || document.documentElement));
+					distTopBody > 0 ?
+						searchDataFrame[i].style.backgroundPosition = "0px " + "-" + (parseInt(distTopBody / dataFrame)) + "px":
+						searchDataFrame[i].style.backgroundPosition = "0px " + distTopBody + "px"				
+				}					
+			}
+		}	
+	}
+}());
 // Galeria
 // Para funcionar deve adicionar essas duas classes abaixo
 //  ## owl-carousel owl-theme
